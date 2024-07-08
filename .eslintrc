@@ -1,3 +1,24 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "tailwindcss"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "esnext",
+    "sourceType": "script",
+    "requireConfigFile": false
+  },
+  "settings": {
+    "tailwindcss": {
+      "groupByResponsive": true
+    }
+  }
 }
